@@ -47,8 +47,8 @@ subprojects {
         mitLicense()
 
         javaVersions {
-            minimumToolchain(17)
-            target(17)
+            minimumToolchain(21)
+            target(21)
         }
 
         github("incendo", "interfaces") {
