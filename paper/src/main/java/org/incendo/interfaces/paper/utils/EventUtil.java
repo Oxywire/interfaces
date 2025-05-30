@@ -20,7 +20,7 @@ public final class EventUtil {
      */
     public static void setAsync(final Event event, final boolean async) {
         try {
-            final Field field = Event.class.getDeclaredField("async");
+            final Field field = Event.class.getDeclaredField("isAsync");
             field.setAccessible(true);
             field.set(event, async);
         } catch (final ReflectiveOperationException ex) {
